@@ -38,13 +38,13 @@
       "description": "We build scalable Android apps, AI powered solutions, robust Java applications and secure systems that drive innovation and growth.",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Deoghar",
-        "addressRegion": "jharkhand",
+        "addressLocality": "Jamui",
+        "addressRegion": "Bihar",
         "addressCountry": "India"
       },
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+91-75205 31473",
+        "telephone": "+91-7520531473",
         "contactType": "customer service",
         "email": "support@ligerelevator.com"
       }
@@ -274,7 +274,7 @@
 
     <!-- CTA Section -->
     <section id="contact" class="cta">
-        <div class="container cta-container">
+        <div class="container cta-container cta-form-layout">
             <div class="cta-content">
                 <div class="cta-icon"><i class="fas fa-phone-alt"></i></div>
                 <div>
@@ -282,7 +282,26 @@
                     <p>We turn your ideas into powerful digital products.</p>
                 </div>
             </div>
-            <a href="#contact" class="btn btn-primary">GET IN TOUCH <i class="fas fa-chevron-right"></i></a>
+            <div class="cta-form-wrapper">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="contact-name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="contact-mobile" placeholder="Mobile Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contact-email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contact-message" placeholder="Your Query Message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">SUBMIT <i class="fas fa-paper-plane"></i></button>
+                    <p style="text-align: center; margin: 15px 0; font-size: 0.9rem; color: var(--text-muted);">OR</p>
+                    <a href="https://wa.me/9162901170?text=Hi!%20I%20have%20an%20idea%20and%20would%20like%20to%20enquire%20about%20your%20services." target="_blank" class="btn btn-block" style="background-color: #25D366; color: white; border: none; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);"><i class="fab fa-whatsapp" style="font-size: 1.1rem; margin-right: 5px;"></i> Chat via WhatsApp directly</a>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -328,7 +347,7 @@
                 <ul>
                     <li><i class="fas fa-phone"></i> +91 75205 31473</li>
                     <li><i class="fas fa-envelope"></i> support@ligerelevator.com</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Deoghar, Jharkhand, India</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Jamui, Bihar, India</li>
                     <li><i class="far fa-clock"></i> Mon - Sat: 10:00 AM - 7:00 PM</li>
                 </ul>
             </div>
@@ -352,6 +371,10 @@
         </div>
     </footer>
 
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    
     <script src="script.js"></script>
 </body>
 </html>
